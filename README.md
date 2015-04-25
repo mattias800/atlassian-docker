@@ -29,8 +29,12 @@ sudo docker-compose up
 
 ## Using Upstart
 
+Ubuntu (and other Linus distros) use Upstart to start and stop services.
+
 See directory `upstart/` for an Upstart conf file.
-Replace the path with the path to your atlassian-docker.git path.
+Replace the path with the path to your `atlassian-docker` path.
+
+Copy the file to `/etc/init` and run `sudo start atlassian` to start it up.   
  
 ## Database configuration
 
@@ -40,3 +44,7 @@ Replace the path with the path to your atlassian-docker.git path.
 * Database: jira for JIRA, stash for Stash, bamboo for Bamboo.
 * Username: atlassian
 * Password: atlassian
+
+## Feedback or problems?
+
+Feel free to send feedback. There are probably tons of possible improvements.
