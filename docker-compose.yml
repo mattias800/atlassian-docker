@@ -1,3 +1,8 @@
+http:
+  build: ./http/
+  ports:
+   - "80:80"
+   - "443:443"
 jira:
   build: ./jira/
   links:
