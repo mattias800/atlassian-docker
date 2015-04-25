@@ -32,7 +32,10 @@ sudo docker-compose up
 Ubuntu (and other Linus distros) use Upstart to start and stop services.
 
 See directory `upstart/` for an Upstart conf file.
-Replace the path with the path to your `atlassian-docker` path.
+
+On the following row
+```chdir /home/ubuntu/atlassian-docker/```
+... replace the path with your `atlassian-docker` path.
 
 Copy the file to `/etc/init` and run `sudo start atlassian` to start it up.   
  
