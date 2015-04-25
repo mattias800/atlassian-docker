@@ -1,3 +1,2 @@
-AUTHOR Mattias Andersson <mattias800@gmail.com>
-FROM postgres:9.4
-
+FROM postgres
+COPY create-databases.sh /docker-entrypoint-initdb.d/
