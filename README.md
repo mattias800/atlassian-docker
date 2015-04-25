@@ -40,6 +40,10 @@ Copy the file to `/etc/init` and run `sudo start atlassian` to start it up.
  
 ## Database configuration
 
+When opening up JIRA, Stash or Bamboo in your browser, it will ask you to input database information.
+
+Use the following.
+
 * Database type: Postgres
 * Host: db
 * Port: 5432
