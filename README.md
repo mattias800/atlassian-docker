@@ -25,6 +25,11 @@ sudo docker-compose build
 sudo docker-compose up
 ```
 
+## Using Upstart
+
+See directory `upstart/` for an Upstart conf file.
+Replace the path with the path to your atlassian-docker.git path.
+ 
 ## Database configuration
 
 * Database type: Postgres
