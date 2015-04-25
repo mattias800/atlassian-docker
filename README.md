@@ -2,15 +2,17 @@
 
 This is an easy way to get JIRA, Stash and Bamboo up and running, connected to Postgres, inside of Docker.
 
-It uses Docker Compose to start the environment.
+There is no setup, and it uses Docker Compose to start the environment.
 
-### Please note*
+### Please note
 
-This is very much work in progress, and might not work.
+This is very much work in progress.
+It is working for me, but don't be surprised if you bump into problems.
 
 ## Data
 
-All data is stored in /data in the host file system.
+All data is stored in `/data` in the host file system.
+If you need to change this, update the paths to the volume mappings in docker-compose.yml.
 
 ## Requirements
 
@@ -34,6 +36,7 @@ Replace the path with the path to your atlassian-docker.git path.
 
 * Database type: Postgres
 * Host: db
+* Port: 5432
 * Database: jira for JIRA, stash for Stash, bamboo for Bamboo.
 * Username: atlassian
 * Password: atlassian
