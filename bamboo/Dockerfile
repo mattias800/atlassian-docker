@@ -10,7 +10,7 @@ RUN mv ./atlassian-bamboo-5.8.1/ /opt/atlassian/bamboo
 
 VOLUME /var/atlassian
 
-ENV STASH_HOME /var/atlassian/application-data/bamboo
+ENV BAMBOO_HOME /var/atlassian/application-data/bamboo
 EXPOSE 8085 8085
 
 ENTRYPOINT /opt/atlassian/bamboo/bin/start-bamboo.sh -fg
