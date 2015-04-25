@@ -22,7 +22,7 @@ An environment with Docker and Docker Compose installed.
 
 ```
 git clone https://github.com/mattias800/atlassian-docker.git
-cd atlassian-docker.git
+cd atlassian-docker
 sudo docker-compose build
 sudo docker-compose up
 ```
