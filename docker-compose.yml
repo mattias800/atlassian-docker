@@ -3,6 +3,11 @@ http:
   ports:
    - "80:80"
    - "443:443"
+  links:
+   - jira
+   - stash
+   - bamboo
+
 jira:
   build: ./jira/
   links:
@@ -11,6 +16,26 @@ jira:
    - "8080:8080"
   volumes:
    - /data/atlassian:/var/atlassian
+
+stash:
+  build: ./stash/
+  links:
+   - db
+  ports:
+   - "7999:7999"
+   - "7990:7990"
+  volumes:
+   - /data/atlassian:/var/atlassian
+
+bamboo:
+  build: ./bamboo/
+  links:
+   - db
+  ports:
+   - "8085:8085"
+  volumes:
+   - /data/atlassian:/var/atlassian
+
 db:
   build: ./db/
   environment:
